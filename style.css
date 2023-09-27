@@ -1,0 +1,47 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 60px;
+}
+
+input {
+  height: 35px;
+  width: 73px;
+  font-size: large;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
