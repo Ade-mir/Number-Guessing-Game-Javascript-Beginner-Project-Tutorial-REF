@@ -3,17 +3,17 @@ let randomNum = Math.floor(Math.random() * 100) + 1;
 let attempts = 0;
 
 // Get HTML elements
-const userGuess = document.getElementById("userGuess");
+const guess = document.getElementById("guess");
 const submit = document.getElementById("submit");
 const hint = document.getElementById("hint");
-const attemptsDiv = document.getElementById("attempts");
+const attemptsText = document.getElementById("attempts");
 
 // Event Listener for button click
 submit.addEventListener("click", checkGuess);
 
 // Function to check the guess
 function checkGuess() {
-  const userValue = Number(userGuess.value);
+  const userValue = Number(guess.value);
   attempts++;
 
   // Using Conditionals
@@ -26,5 +26,5 @@ function checkGuess() {
   }
 
   // Display the number of attempts
-  attemptsDiv.textContent = "Attempts: " + attempts;
+  attemptsText.textContent = "Attempts: " + attempts;
 }
