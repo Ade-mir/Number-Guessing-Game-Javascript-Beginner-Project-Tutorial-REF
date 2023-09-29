@@ -20,7 +20,7 @@ input {
 
 button {
   padding: 10px 20px;
-  background: rgb(0, 0, 0);
+  background-color: black;
   color: white;
   border: none;
   border-radius: 4px;
@@ -44,4 +44,5 @@ input:focus {
 
 button:hover {
   cursor: pointer;
+  background-color: grey;
 }
